@@ -44,7 +44,6 @@ local listOfCounters={
 }
 
 function onLoad(state)
- log(type(state))
  self.max_typed_number=40
  if tonumber(state)then curCounter=state end
  if self.GetCustomObject().image!=listOfCounters[tonumber(curCounter)]then changeArt()end
