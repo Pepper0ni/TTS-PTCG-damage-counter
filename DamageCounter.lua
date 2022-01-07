@@ -51,6 +51,7 @@ end
 
 function changeArt()
  self.setCustomObject({image=listOfCounters[tonumber(curCounter)]})
+ self.setName(curCounter.."0 Damage")
  self.script_state=curCounter
  self.reload()
 end
